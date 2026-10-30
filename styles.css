@@ -1,0 +1,46 @@
+:root {
+  --cream: #F4EFE6;
+  --rust: #7C301C;
+  --ink: #1C1915;
+  --muted: #5c564e;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background: var(--cream);
+  color: var(--ink);
+  line-height: 1.55;
+}
+.wrap { max-width: 40rem; margin: 0 auto; padding: 1.5rem 1.25rem; }
+header { padding-top: 2.5rem; }
+.eyebrow {
+  margin: 0 0 0.35rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: var(--rust);
+  font-family: system-ui, -apple-system, sans-serif;
+}
+h1 { margin: 0 0 0.5rem; font-size: 2rem; font-weight: 600; }
+h2 { margin: 0 0 0.5rem; font-size: 1.35rem; color: var(--rust); }
+.lede { margin: 0; color: var(--muted); font-style: italic; }
+.cards { display: grid; gap: 1rem; padding-top: 0.5rem; }
+.card {
+  display: block;
+  padding: 1.15rem 1.25rem;
+  border: 1px solid rgba(28,25,21,0.12);
+  border-radius: 12px;
+  background: #fffdf9;
+  text-decoration: none;
+  color: inherit;
+}
+.card:hover { border-color: var(--rust); }
+.card p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+article h2 { margin-top: 1.75rem; }
+article ul { padding-left: 1.2rem; }
+article a { color: var(--rust); }
+.meta { color: var(--muted); font-size: 0.9rem; font-family: system-ui, -apple-system, sans-serif; }
+footer { color: var(--muted); font-size: 0.85rem; padding-bottom: 3rem; }
+nav.back { font-family: system-ui, -apple-system, sans-serif; font-size: 0.9rem; margin-bottom: 1rem; }
+nav.back a { color: var(--rust); text-decoration: none; }
